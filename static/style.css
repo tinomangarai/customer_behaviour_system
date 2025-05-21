@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Results</h1>
+        
+        <div class="results">
+            <div class="result-item">
+                <span class="label">Churn Probability:</span>
+                <span class="value">{{ churn_prob }}</span>
+            </div>
+            
+            <div class="result-item">
+                <span class="label">Customer Persona:</span>
+                <span class="value">{{ persona }}</span>
+            </div>
+            
+            <div class="result-item">
+                <span class="label">NPS Group:</span>
+                <span class="value">{{ nps_group }}</span>
+            </div>
+            
+            <div class="result-item">
+                <span class="label">UX Score:</span>
+                <span class="value">{{ ux_score }}</span>
+            </div>
+        </div>
+        
+        <a href="/predict-form">Make Another Prediction</a>
+    </div>
+</body>
+</html>
